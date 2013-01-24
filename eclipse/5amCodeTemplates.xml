@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><templates><template autoinsert="false" context="filecomment_context" deleted="false" description="Comment for created Java files" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.filecomment" name="filecomment">/**
+ * Copyright (c) 5AM Solutions 2012.
+ * All rights reserved.
+ *
+ * The license terms of this software are contained in LICENSE.txt which
+ * accompanies this distribution.
+ */</template></templates>

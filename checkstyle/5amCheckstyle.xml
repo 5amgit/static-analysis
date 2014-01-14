@@ -11,15 +11,6 @@
     <module name="FileLength"/>
     <module name="FileTabCharacter"/>
     <module name="TreeWalker">
-        <module name="JavadocMethod">
-            <property name="scope" value="protected"/>
-            <property name="allowMissingThrowsTags" value="true"/>
-            <property name="allowMissingPropertyJavadoc" value="true"/>
-        </module>
-        <module name="JavadocType"/>
-        <module name="JavadocVariable">
-            <property name="scope" value="protected"/>
-        </module>
         <module name="JavadocStyle"/>
         <module name="ConstantName"/>
         <module name="LocalFinalVariableName"/>
@@ -43,7 +34,6 @@
             <property name="max" value="120"/>
         </module>
         <module name="MethodLength"/>
-        <module name="ParameterNumber"/>
         <module name="EmptyForIteratorPad"/>
         <module name="MethodParamPad"/>
         <module name="NoWhitespaceAfter"/>

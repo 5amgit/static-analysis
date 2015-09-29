@@ -68,7 +68,9 @@
 
     <rule ref="rulesets/java/logging-jakarta-commons.xml" />
 
-    <rule ref="rulesets/java/logging-java.xml" />
+    <rule ref="rulesets/java/logging-java.xml">
+	 <exclude name="GuardLogStatementJavaUtil" />
+    </rule>
 
     <rule ref="rulesets/java/migrating.xml" />
 
@@ -91,6 +93,8 @@
     <rule ref="rulesets/java/strings.xml">
         <exclude name="InsufficientStringBufferDeclaration" />
 	<exclude name="ConsecutiveAppendsShouldReuse" />
+        <exclude name="ConsecutiveLiteralAppends" />
+        <exclude name="AppendCharacterWithChar" />
     </rule>
 
     <rule ref="rulesets/java/sunsecure.xml" />

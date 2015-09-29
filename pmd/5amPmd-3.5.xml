@@ -55,6 +55,7 @@
         <exclude name="ConfusingTernary" />
         <exclude name="MissingStaticMethodInNonInstantiatableClass" />
         <exclude name="UseUtilityClass" />
+	<exclude name="SimplifyBooleanReturns" />
     </rule>
 
     <rule ref="rulesets/java/finalizers.xml" />
@@ -74,6 +75,7 @@
     <rule ref="rulesets/java/naming.xml">
         <exclude name="LongVariable" />
         <exclude name="ShortVariable" />
+	<exclude name="ShortClassName" />
     </rule>
 
     <rule ref="rulesets/java/optimizations.xml">
@@ -88,6 +90,7 @@
 
     <rule ref="rulesets/java/strings.xml">
         <exclude name="InsufficientStringBufferDeclaration" />
+	<exclude name="ConsecutiveAppendsShouldReuse" />
     </rule>
 
     <rule ref="rulesets/java/sunsecure.xml" />

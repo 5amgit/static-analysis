@@ -69,6 +69,13 @@
 
     <rule ref="rulesets/java/logging-jakarta-commons.xml" />
 
+    <rule ref="rulesets/java/logging-jakarta-commons.xml/GuardLogStatement">
+	<properties>
+		<property name="guardsMethods" value="isDebugEnabled" />
+		<property name="logLevels" value="debug" />
+	</properties>
+    </rule>
+
     <rule ref="rulesets/java/logging-java.xml">
 	 <exclude name="GuardLogStatementJavaUtil" />
     </rule>

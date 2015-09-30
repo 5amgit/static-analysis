@@ -56,6 +56,7 @@
         <exclude name="MissingStaticMethodInNonInstantiatableClass" />
         <exclude name="UseUtilityClass" />
 	<exclude name="SimplifyBooleanReturns" />
+	<exclude name="UseVarargs" />
     </rule>
 
     <rule ref="rulesets/java/finalizers.xml" />

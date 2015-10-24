@@ -80,5 +80,23 @@
         <module name="OneStatementPerLine"/>
     </module>
     <module name="Translation"/>
-    <module name="SuppressionCommentFilter"/>
+    <module name="SuppressionCommentFilter">
+        <property name="offCommentFormat" value="CHECKSTYLE\:OFF($|[^\:].*)" />
+        <property name="onCommentFormat" value="CHECKSTYLE\:ON($|[^:].*)" />
+    </module>
+    <module name="SuppressionCommentFilter">
+        <property name="offCommentFormat" value="CHECKSTYLE\:OFF\: ([\w\|]+)" />
+        <property name="onCommentFormat" value="CHECKSTYLE\:ON\: ([\w\|]+)" />
+        <property name="checkFormat" value="$1" />
+    </module>
+    <module name="SuppressWithNearbyCommentFilter">
+        <property name="commentFormat" value="CHECKSTYLE\:IGNORE($|[^\:].*)" />
+        <property name="checkFormat" value=".*" />
+        <property name="influenceFormat" value="1" />
+    </module>
+    <module name="SuppressWithNearbyCommentFilter">
+        <property name="commentFormat" value="CHECKSTYLE\:IGNORE\: ([\w\|]+)" />
+        <property name="checkFormat" value="$1"/>
+        <property name="influenceFormat" value="1" />
+    </module>
 </module>
